@@ -19,5 +19,10 @@ describe("User entity", () => {
                 new User("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
             }).toThrow(err);
         });
+        it("should create user", () => {
+            const user = new User("Tyler Durden");
+
+            expect(user).toBeDefined();
+        });
     });
 });
