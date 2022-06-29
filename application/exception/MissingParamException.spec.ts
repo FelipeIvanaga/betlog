@@ -12,4 +12,10 @@ describe("Missing Param Exception", () => {
 
         expect(err.message).toBe("missing param: param");
     });
+
+    it("should have name 'MissingParamException'", () => {
+        const err = new MissingParamException();
+
+        expect(err.name).toBe("MissingParamException");
+    });
 });
